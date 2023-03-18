@@ -13,6 +13,9 @@ const bookList = [
   { title: "Moby Dick", author: "Herman Melville" },
 ];
 
+const newBook = (x, y) => (bookList.title = x);
+bookList.author = y;
+
 /* Intermediate Challenge */
 
 /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the

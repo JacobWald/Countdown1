@@ -13,8 +13,14 @@ const bookList = [
   { title: "Moby Dick", author: "Herman Melville" },
 ];
 
-const newBook = (x, y) => (bookList.title = x);
-bookList.author = y;
+//(1)
+const addNewBook = (x, y) => bookList.push(x, y);
+
+addNewBook("The Scarlet Letter", "Nathaniel Hawthorne");
+console.log(bookList);
+
+//(2)
+const removeBook = (x) => bookList.splice(x, 1);
 
 /* Intermediate Challenge */
 

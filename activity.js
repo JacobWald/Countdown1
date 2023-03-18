@@ -14,13 +14,21 @@ const bookList = [
 ];
 
 //(1)
-const addNewBook = (x, y) => bookList.push(title.x, author.y);
+const addNewBook = (x, y) => bookList.push({ title: x, author: y });
 
 addNewBook("The Scarlet Letter", "Nathaniel Hawthorne");
 console.log(bookList);
 
 //(2)
-const removeBook = (x) => bookList.splice(x, 1);
+const removeBook = (x) => {
+  bookList.forEach((element) => {
+    if (element.title === x) {
+      bookList.splice(bookList.indexOf(element));
+    }
+  });
+};
+removeBook("The Scarlet Letter");
+console.log(bookList);
 
 /* Intermediate Challenge */
 

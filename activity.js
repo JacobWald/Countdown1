@@ -14,7 +14,7 @@ const bookList = [
 ];
 
 //(1)
-const addNewBook = (x, y) => bookList.push(x, y);
+const addNewBook = (x, y) => bookList.push(title.x, author.y);
 
 addNewBook("The Scarlet Letter", "Nathaniel Hawthorne");
 console.log(bookList);
